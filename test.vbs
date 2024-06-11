@@ -15,10 +15,10 @@ Loop
 X=Msgbox("Error",0+16,"Warning")
 Set objShell = CreateObject("WScript.Shell")
 
-Do While True
-    objShell.Run "https://www.bing.com/search?q=uwu"
+For i = 1 To 5
+    objShell.Run "https://youtu.be/dQw4w9WgXcQ?si=R17uaCRG4Qt02Cuh"
     WScript.Sleep 5000
-Loop
+Next
 X=Msgbox("Error",0+16,"Warning")
 X=Msgbox("Error",0+16,"Warning")
 X=Msgbox("Error",0+16,"Warning")
